@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hair Craft Salon - Golaghat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink:#1a1714;
+  --bg:#faf6ee;
+  --paper:#fffdf9;
+  --brass:#a8803f;
+  --brass2:#c9a661;
+  --gold:#e8cf97;
+  --line:#e8dcc4;
+  --wa:#1f9d55;
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family:Hind,system-ui,sans-serif;
+  background:linear-gradient(180deg,#fffdf9,var(--bg),#f3ecdd);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+}
+
+.wrap {
+  max-width:560px;
+  margin:auto;
+  padding:0 20px;
+}
+
+/* HEADER */
+
+header {
+  text-align:center;
+  padding:65px 20px 55px;
+  background:
+    linear-gradient(rgba(10,8,5,.65),rgba(10,8,5,.82)),
+    url("IMG-20261124-WA0036.jpg") center/cover no-repeat;
+  border-bottom:2px solid var(--brass2);
+}
+
+.mono {
+  width:120px;
+  height:120px;
+  margin:0 auto 22px;
+  border-radius:50%;
+  background:#000;
+  color:var(--gold);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:"Cormorant Garamond",serif;
+  font-size:3.4rem;
+  font-weight:700;
+  box-shadow:0 0 0 5px white,0 0 0 7px var(--brass2);
+}
+
+.brand {
+  font-family:Cinzel,serif;
+  font-weight:700;
+  font-size:1.8rem;
+  letter-spacing:.18em;
+  color:white;
+}
+
+.brand small {
+  display:block;
+  color:var(--brass2);
+  letter-spacing:.6em;
+  font-size:.8rem;
+}
+
+.tag {
+  color:#ecdcb6;
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.2rem;
+  margin-top:15px;
+}
+
+.meta {
+  color:#e6dcc6;
+  margin-top:5px;
+}
+
+.cta {
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 30px;
+  border-radius:50px;
+  text-decoration:none;
+  font-family:Cinzel,serif;
+  font-weight:700;
+  letter-spacing:.12em;
+  background:linear-gradient(135deg,var(--gold),var(--brass2));
+  color:var(--ink);
+}
+
+/* SECTIONS */
+
+section {
+  padding:35px 0 5px;
+}
+
+h2 {
+  font-family:"Cormorant Garamond",serif;
+  font-size:2rem;
+  margin-bottom:15px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+h2:after {
+  content:"";
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg,var(--brass),transparent);
+}
+
+.card {
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:24px 20px;
+  box-shadow:0 14px 34px -22px rgba(120,90,30,.45);
+}
+
+/* BOOKING FORM */
+
+form.card {
+  background:linear-gradient(160deg,#1d1914,#0b0a08);
+  color:#f3ead7;
+  border:1px solid rgba(201,166,97,.55);
+  border-radius:22px;
+  padding:30px 22px;
+}
+
+.f-eyebrow {
+  font-family:Cinzel,serif;
+  color:var(--brass2);
+  text-align:center;
+  letter-spacing:.4em;
+  font-size:.75rem;
+}
+
+.f-title {
+  font-family:"Cormorant Garamond",serif;
+  font-size:2rem;
+  text-align:center;
+  color:#fff6e0;
+}
+
+.f-sub {
+  color:#b9ad95;
+  text-align:center;
+  font-size:.9rem;
+  margin-bottom:20px;
+}
+
+label,legend {
+  display:block;
+  color:var(--brass2);
+  font-family:Cinzel,serif;
+  font-size:.75rem;
+  letter-spacing:.15em;
+  margin-bottom:8px;
+}
+
+.field {
+  margin-bottom:20px;
+}
+
+fieldset {
+  border:0;
+  padding:0;
+}
+
+.inp {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:0 12px;
+  border:1px solid rgba(201,166,97,.3);
+  border-radius:12px;
+  background:rgba(255,255,255,.05);
+}
+
+.inp .cc {
+  color:var(--gold);
+  border-right:1px solid rgba(201,166,97,.4);
+  padding-right:10px;
+}
+
+input[type=text],input[type=tel] {
+  width:100%;
+  min-width:0;
+  padding:14px 0;
+  font:inherit;
+  background:transparent;
+  color:#fff6e0;
+  border:0;
+  outline:none;
+}
+
+input::placeholder {
+  color:#7d7463;
+}
+
+/* GENDER */
+
+.g {
+  display:flex;
+  gap:10px;
+}
+
+.g label {
+  flex:1;
+  margin:0;
+}
+
+.g input {
+  display:none;
+}
+
+.g span {
+  display:block;
+  text-align:center;
+  padding:12px 5px;
+  border:1px solid rgba(201,166,97,.3);
+  border-radius:12px;
+  background:rgba(255,255,255,.05);
+  color:#e6dcc6;
+  cursor:pointer;
+}
+
+.g input:checked+span {
+  background:linear-gradient(135deg,var(--gold),var(--brass2));
+  color:#1a1409;
+  font-weight:bold;
+}
+
+/* TIME SELECTOR */
+
+.time-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:9px;
+}
+
+.time-grid label {
+  margin:0;
+  position:relative;
+}
+
+.time-grid input {
+  display:none;
+}
+
+.time-grid span {
+  display:block;
+  text-align:center;
+  padding:12px 4px;
+  border:1px solid rgba(201,166,97,.35);
+  border-radius:10px;
+  color:#e6dcc6;
+  font-family:Hind,sans-serif;
+  font-size:.95rem;
+  letter-spacing:0;
+  cursor:pointer;
+  background:rgba(255,255,255,.05);
+}
+
+.time-grid input:checked+span {
+  background:linear-gradient(135deg,var(--gold),var(--brass2));
+  color:#1a1409;
+  font-weight:bold;
+}
+
+.t-note {
+  color:#a89d86;
+  font-size:.85rem;
+  margin-top:10px;
+}
+
+.err {
+  color:#ff9d8f;
+  font-size:.85rem;
+  min-height:20px;
+}
+
+/* BOOK BUTTON */
+
+button.book {
+  width:100%;
+  padding:17px;
+  border:0;
+  border-radius:12px;
+  cursor:pointer;
+  color:#1a1409;
+  font-family:Cinzel,serif;
+  font-weight:700;
+  letter-spacing:.12em;
+  font-size:1rem;
+  background:linear-gradient(135deg,var(--gold),var(--brass2));
+}
+
+.hint {
+  color:#a89d86;
+  font-size:.85rem;
+  text-align:center;
+  margin-top:15px;
+}
+
+/* GALLERY */
+
+.gallery {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.gallery figure {
+  position:relative;
+  overflow:hidden;
+  border-radius:14px;
+  background:#111;
+  border:1px solid var(--line);
+}
+
+.gallery figure.wide {
+  grid-column:1/-1;
+}
+
+.gallery img {
+  width:100%;
+  aspect-ratio:3/4;
+  object-fit:cover;
+}
+
+.gallery figure.wide img {
+  aspect-ratio:4/3;
+}
+
+.gallery figcaption {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:25px 12px 10px;
+  color:#f3e3bd;
+  font-family:"Cormorant Garamond",serif;
+  font-weight:700;
+  font-size:1.1rem;
+  background:linear-gradient(transparent,rgba(0,0,0,.75));
+}
+
+/* SERVICES */
+
+.svc-card {
+  margin-bottom:18px;
+}
+
+.svc-title {
+  text-align:center;
+  font-family:Cinzel,serif;
+  font-weight:700;
+  letter-spacing:.15em;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--line);
+}
+
+.grp {
+  display:inline-block;
+  margin:18px 0 5px;
+  padding:5px 12px;
+  border-radius:5px;
+  background:var(--ink);
+  color:var(--gold);
+  font-family:Cinzel,serif;
+  font-size:.75rem;
+}
+
+.rates {
+  list-style:none;
+  padding:0;
+}
+
+.rates li {
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  padding:6px 0;
+}
+
+.rates .n {
+  font-family:"Cormorant Garamond",serif;
+  font-weight:700;
+  font-size:1.15rem;
+}
+
+.rates .d {
+  flex:1;
+  border-bottom:1px dotted #b9ab8c;
+}
+
+.rates .p {
+  font-family:"Cormorant Garamond",serif;
+  font-weight:700;
+  font-size:1.15rem;
+  color:var(--brass);
+  white-space:nowrap;
+}
+
+/* MEN */
+
+.boys {
+  background:linear-gradient(160deg,#1d1914,#0b0a08);
+  border:1px solid rgba(201,166,97,.55);
+}
+
+.boys .svc-title {
+  color:var(--brass2);
+}
+
+.boys .grp {
+  background:linear-gradient(135deg,var(--gold),var(--brass2));
+  color:#1a1409;
+}
+
+.boys .rates .n {
+  color:#f3ead7;
+}
+
+.boys .rates .d {
+  border-color:rgba(201,166,97,.4);
+}
+
+.boys .rates .p {
+  color:var(--gold);
+}
+
+/* WOMEN */
+
+.girls {
+  background:linear-gradient(160deg,#fff5f9,#ffe3ee);
+  border:1px solid #f2a9c6;
+}
+
+.girls .svc-title {
+  color:#c2185b;
+}
+
+.girls .grp {
+  background:linear-gradient(135deg,#e91e7a,#c2185b);
+  color:white;
+}
+
+.girls .rates .n {
+  color:#4a1630;
+}
+
+.girls .rates .d {
+  border-color:#e8a0bd;
+}
+
+.girls .rates .p {
+  color:#c2185b;
+}
+
+/* VISIT */
+
+.info p {
+  margin-bottom:8px;
+}
+
+.info b {
+  color:var(--brass);
+  font-family:Cinzel,serif;
+  font-size:.8rem;
+}
+
+.links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:15px;
+}
+
+.links a {
+  padding:10px 15px;
+  border:1px solid var(--ink);
+  border-radius:50px;
+  color:var(--ink);
+  text-decoration:none;
+}
+
+.links a.wa {
+  background:var(--wa);
+  border-color:var(--wa);
+  color:white;
+}
+
+footer {
+  text-align:center;
+  color:var(--brass);
+  font-family:Cinzel,serif;
+  letter-spacing:.15em;
+  font-size:.75rem;
+  padding:35px 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="mono">HC</div>
+
+  <div class="brand">
+    HAIR CRAFT
+    <small>SALON</small>
+  </div>
+
+  <div class="tag">Precision · Passion · Perfection</div>
+
+  <div class="meta">
+    Golaghat · Open daily, 9:30 AM to 9:30 PM
+  </div>
+
+  <a class="cta" href="#book">BOOK YOUR TURN</a>
+</header>
+
+<main class="wrap">
+
+<!-- BOOKING -->
+
+<section id="book">
+<h2>Book Your Turn</h2>
+
+<form class="card" id="f">
+
+<div class="f-eyebrow">HAIR CRAFT SALON</div>
+<div class="f-title">Reserve Your Seat</div>
+<div class="f-sub">Fill in your details and we will get you in line.</div>
+
+<div class="field">
+<label for="name">Full Name</label>
+<div class="inp">
+<input type="text" id="name" placeholder="Your name">
+</div>
+<div class="err" id="e-name"></div>
+</div>
+
+<div class="field">
+<label for="phone">Mobile Number</label>
+<div class="inp">
+<span class="cc">+91</span>
+<input type="tel" id="phone" maxlength="10" placeholder="10-digit number">
+</div>
+<div class="err" id="e-phone"></div>
+</div>
+
+<fieldset class="field">
+<legend>Select Your Time</legend>
+
+<div class="time-grid" id="timeGrid"></div>
+
+<div class="t-note">
+Select any time between 9:30 AM and 9:30 PM.
+</div>
+
+<div class="err" id="e-time"></div>
+</fieldset>
+
+<fieldset class="field">
+<legend>Select Category</legend>
+
+<div class="g">
+
+<label>
+<input type="radio" name="gender" value="Men">
+<span>Men</span>
+</label>
+
+<label>
+<input type="radio" name="gender" value="Women">
+<span>Women</span>
+</label>
+
+<label>
+<input type="radio" name="gender" value="Kids">
+<span>Kids</span>
+</label>
+
+</div>
+
+<div class="err" id="e-gender"></div>
+</fieldset>
+
+<button type="submit" class="book">
+BOOK MY NUMBER
+</button>
+
+<p class="hint">
+WhatsApp will open with your booking message. Just press Send.
+</p>
+
+</form>
+</section>
+
+<!-- SERVICES -->
+
+<section id="rates">
+<h2>Services &amp; Rates</h2>
+<div id="svc"></div>
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+<h2>Our Salon</h2>
+
+<div class="gallery">
+
+<figure class="wide">
+<img src="IMG-20261124-WA0017.jpg" alt="Salon signboard" loading="lazy">
+<figcaption>Night Glow</figcaption>
+</figure>
+
+<figure>
+<img src="IMG-20261124-WA0021.jpg" alt="Salon inside view" loading="lazy">
+<figcaption>Inside View</figcaption>
+</figure>
+
+<figure>
+<img src="IMG-20261124-WA0020.jpg" alt="Salon anniversary cake" loading="lazy">
+<figcaption>1st Anniversary</figcaption>
+</figure>
+
+<figure>
+<img src="IMG-20261124-WA0037.jpg" alt="Salon entrance" loading="lazy">
+<figcaption>Our Entrance</figcaption>
+</figure>
+
+<figure>
+<img src="IMG-20261124-WA0012.jpg" alt="Salon lighting and interior" loading="lazy">
+<figcaption>Stunning Interior</figcaption>
+</figure>
+
+</div>
+</section>
+
+<!-- ADDRESS -->
+
+<section class="info">
+<h2>Visit Us</h2>
+
+<div class="card">
+
+<p><b>Address</b> GDSA Market, opposite the Post Office, Golaghat</p>
+
+<p><b>Hours</b> Open all 7 days, 9:30 AM to 9:30 PM</p>
+
+<div class="links">
+
+<a class="wa" id="wa-link" href="#">Chat on WhatsApp</a>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Hair+Craft+Salon+GDSA+Market+Golaghat" target="_blank">
+View on Map
+</a>
+
+<a href="https://www.instagram.com/hair_craft_salon_golaghat/" target="_blank">
+Instagram
+</a>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+HAIR CRAFT SALON · GOLAGHAT
+</footer>
+
+<script>
+
+// ==========================
+// SHOP DETAILS
+// ==========================
+
+var SHOP_WA = "917002641139";
+var SHOP_NAME = "Hair Craft Salon";
+
+// ==========================
+// TIME GENERATOR
+// 9:30 AM TO 9:30 PM
+// EVERY 30 MINUTES
+// ==========================
+
+var timeGrid = document.getElementById("timeGrid");
+
+function generateTimes() {
+
+  var start = 9 * 60 + 30;
+  var end = 21 * 60 + 30;
+
+  for (var minutes = start; minutes <= end; minutes += 30) {
+
+    var hour = Math.floor(minutes / 60);
+    var minute = minutes % 60;
+
+    var ampm = hour >= 12 ? "PM" : "AM";
+
+    var displayHour = hour % 12;
+    if (displayHour === 0) displayHour = 12;
+
+    var displayMinute = minute === 0 ? "00" : "30";
+
+    var timeText = displayHour + ":" + displayMinute + " " + ampm;
+
+    var label = document.createElement("label");
+
+    var input = document.createElement("input");
+    input.type = "radio";
+    input.name = "slot";
+    input.value = timeText;
+    input.required = true;
+
+    var span = document.createElement("span");
+    span.textContent = timeText;
+
+    label.appendChild(input);
+    label.appendChild(span);
+
+    timeGrid.appendChild(label);
+  }
+}
+
+generateTimes();
+
+// ==========================
+// SERVICES
+// ==========================
+
+var SERVICES = [
+
+{
+title:"Hair Services",
+theme:"boys",
+
+groups:[
+
+{name:"Hair Cut",items:[
+["Kids Hair Cut","₹150"],
+["Men's Hair Cut","₹200"],
+["Men's Shaving","₹100"],
+["Men's Beard Trimming / Setting","₹150"],
+["Haircut + Beard","₹250"],
+["Hair Wash & Hair Setting","₹150"]
+]},
+
+{name:"Hair Colour",items:[
+["Matrix","₹600"],
+["L'Oreal","₹600"],
+["Raaga","₹500"],
+["Gel","₹500"],
+["Funky Colour","₹1500"],
+["Highlight Colour","₹1800"]
+]},
+
+{name:"Massage",items:[
+["Oil Head Massage","₹200"],
+["Half Body Massage","₹300"]
+]},
+
+{name:"Hair Spa",items:[
+["Normal Hair Spa","₹600"],
+["Power Hair Spa","₹800"],
+["Keratin Spa","₹900"],
+["Anti-Dandruff Spa","₹1000"],
+["Anti-Hairfall Spa","₹1000"]
+]},
+
+{name:"Hair Straightening & Smoothing",items:[
+["Hair Straightening","₹2800"],
+["Hair Smoothing","₹3200"]
+]}
+
+]
+},
+
+{
+title:"Girls Services",
+theme:"girls",
+
+groups:[
+
+{name:"Face Wash",items:[
+["Lotus","₹250"],
+["Jove (S)","₹150"],
+["Nivea","₹150"]
+]},
+
+{name:"Face Scrub",items:[
+["Lotus","₹350"],
+["Raaga","₹300"],
+["Fruit","₹250"]
+]},
+
+{name:"De-Tan",items:[
+["Raaga Face De-tan","₹350"],
+["Raaga Neck De-tan","₹300"],
+["O3+ Face De-tan","₹400"],
+["O3+ Neck De-tan","₹350"]
+]},
+
+{name:"Clean Up",items:[
+["Basic Clean Up","₹500"],
+["Premium Clean Up","₹800"]
+]},
+
+{name:"Facial",items:[
+["Fruit Facial","₹1200"]
+]},
+
+{name:"Skin Care Facial",items:[
+["Oil Skin Care Facial","₹1600"],
+["Dry Skin Hydrating Facial","₹1600"],
+["Sensitive Skin Soothing Facial","₹1600"]
+]},
+
+{name:"Glow & Brightening",items:[
+["Brightening Facial","₹2700"],
+["Vitamin C Glow Facial","₹2700"],
+["De-Tan Facial","₹2700"]
+]},
+
+{name:"Premium Facial",items:[
+["Gold Facial","₹3000"],
+["Diamond Facial","₹3000"],
+["Pearl Brightening Facial","₹3000"]
+]},
+
+{name:"Piercing",items:[
+["Normal Piercing","₹150"],
+["Stud","Price Extra"]
+]}
+
+]
+}
+
+];
+
+// ==========================
+// BUILD SERVICES
+// ==========================
+
+var serviceBox = document.getElementById("svc");
+
+SERVICES.forEach(function(category){
+
+  var card = document.createElement("div");
+  card.className = "card svc-card " + category.theme;
+
+  var title = document.createElement("div");
+  title.className = "svc-title";
+  title.textContent = category.title;
+
+  card.appendChild(title);
+
+  category.groups.forEach(function(group){
+
+    var heading = document.createElement("div");
+    heading.className = "grp";
+    heading.textContent = group.name;
+
+    card.appendChild(heading);
+
+    var list = document.createElement("ul");
+    list.className = "rates";
+
+    group.items.forEach(function(item){
+
+      var li = document.createElement("li");
+
+      var name = document.createElement("span");
+      name.className = "n";
+      name.textContent = item[0];
+
+      var dots = document.createElement("span");
+      dots.className = "d";
+
+      var price = document.createElement("span");
+      price.className = "p";
+      price.textContent = item[1];
+
+      li.appendChild(name);
+      li.appendChild(dots);
+      li.appendChild(price);
+
+      list.appendChild(li);
+    });
+
+    card.appendChild(list);
+  });
+
+  serviceBox.appendChild(card);
+
+});
+
+// ==========================
+// WHATSAPP LINK
+// ==========================
+
+document.getElementById("wa-link").href =
+"https://wa.me/" + SHOP_WA +
+"?text=" +
+encodeURIComponent("Hello " + SHOP_NAME + ", I need some information.");
+
+// ==========================
+// BOOKING FORM
+// ==========================
+
+var form = document.getElementById("f");
+
+form.addEventListener("submit",function(event){
+
+  event.preventDefault();
+
+  var name = document.getElementById("name").value.trim();
+
+  var phone =
+  document.getElementById("phone").value.replace(/\D/g,"");
+
+  var selectedTime =
+  form.querySelector('input[name="slot"]:checked');
+
+  var selectedCategory =
+  form.querySelector('input[name="gender"]:checked');
+
+  var valid = true;
+
+  document.getElementById("e-name").textContent = "";
+  document.getElementById("e-phone").textContent = "";
+  document.getElementById("e-time").textContent = "";
+  document.getElementById("e-gender").textContent = "";
+
+  if(name.length < 2) {
+    document.getElementById("e-name").textContent =
+    "Please enter your name.";
+    valid = false;
+  }
+
+  if(!/^[6-9]\d{9}$/.test(phone)) {
+    document.getElementById("e-phone").textContent =
+    "Enter a valid 10-digit mobile number.";
+    valid = false;
+  }
+
+  if(!selectedTime) {
+    document.getElementById("e-time").textContent =
+    "Please select your time.";
+    valid = false;
+  }
+
+  if(!selectedCategory) {
+    document.getElementById("e-gender").textContent =
+    "Please select a category.";
+    valid = false;
+  }
+
+  if(!valid) return;
+
+  var message =
+  "Hello " + SHOP_NAME + "!" +
+  "\nMy name: " + name +
+  "\nMobile: " + phone +
+  "\nBooking time: " + selectedTime.value +
+  "\nCategory: " + selectedCategory.value +
+  "\nPlease add my turn in the line.";
+
+  var url =
+  "https://wa.me/" + SHOP_WA +
+  "?text=" + encodeURIComponent(message);
+
+  window.location.href = url;
+
+});
+
+</script>
+
+</body>
+</html>
